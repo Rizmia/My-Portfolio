@@ -18,7 +18,7 @@ export const Projects = () => {
       title: "Car Rental System",
       description: "Web Development",
       imgUrl: car,
-      githubUrl: "https://github.com/your-username/car-rental-system",
+      githubUrl: "https://github.com/Rizmia/Car-Rental-System",
       
     },
     {
