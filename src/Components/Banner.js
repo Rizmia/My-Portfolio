@@ -5,13 +5,12 @@ import { ArrowRightCircle } from "react-bootstrap-icons";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
 
-
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState("");
   const [delta, setDelta] = useState(300 - Math.random() * 100);
-  const [/*index*/, setIndex] = useState(1);
+  const [, /*index*/ setIndex] = useState(1);
   const toRotate = ["Web Developer", "Full Stack Developer", "UI/UX Designer"];
   const period = 2000;
 
@@ -23,7 +22,7 @@ export const Banner = () => {
     return () => {
       clearInterval(ticker);
     };
-  }, );//[text]
+  }); //[text]
 
   const tick = () => {
     let i = loopNum % toRotate.length;
@@ -76,19 +75,24 @@ export const Banner = () => {
                     </span>
                   </h1>
                   <p style={{ textAlign: "justify" }}>
-                    I'm currently an undergraduate student at SLIIT,
-                    specializing in BSc Hons in Information Technology. With a
-                    strong passion for software development, I am dedicated to
-                    honing my coding skills and exploring innovative solutions
-                    in the tech world. My academic journey at SLIIT has provided
-                    me with a solid foundation in various IT disciplines,
-                    allowing me to engage in practical projects that enhance my
-                    technical expertise. I am eager to connect with like-minded
-                    professionals and industry experts to collaborate, learn,
-                    and grow in this dynamic field.
+                    As a third-year undergraduate student at the Sri Lankan
+                    Institute of Information Technology (SLIIT), specializing in
+                    BSc (Hons) in Information Technology, I bring a strong
+                    passion for software engineering and a keen eye for creative
+                    problem-solving. I am committed to developing innovative,
+                    user-focused solutions that make a difference.<br></br> <br></br>My journey in
+                    the tech world has allowed me to explore web development,
+                    Full Stack Development, UI/UX design, and mobile app
+                    development, enabling me to hone my skills through diverse,
+                    hands-on projects.<br></br> <br></br> I thrive on challenges that inspire
+                    growth and innovation, and I am always eager to collaborate,
+                    learn, and create impactful digital experiences. Ready to
+                    bring ideas to life, I look forward to connecting and
+                    building something amazing together!
                   </p>
-                  <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
-                
+                  <button onClick={() => console.log("connect")}>
+                    Let’s Connect <ArrowRightCircle size={25} />
+                  </button>
                 </div>
               )}
             </TrackVisibility>
